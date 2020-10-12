@@ -46,7 +46,6 @@ if __name__=='__main__':
     for i in k:
         if i=='0' or i=='1':
             inpkey.append(i) # turning input into list
-            count=1
         else:
             count=0
             break
