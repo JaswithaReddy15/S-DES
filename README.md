@@ -7,7 +7,4 @@ This respository consists of three programs that implement the S-DES algorithm.<
 ![P8 Table](http://img.brainkart.com/extra/yqRHC5K.jpg)
 <br>
 2. Encryption <br>
-![Key Generation](https://img.brainkart.com/extra/ZaaYJhs.jpg)
-
-<br>
 3. Decryption <br>
