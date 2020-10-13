@@ -165,7 +165,7 @@ if __name__=='__main__':
             print("After applying EP to R: ",EP_1)
             
             #input key2
-            k2flag=1 # to check validity of key1
+            k2flag=1 # to check validity of key2
             k2=[]
             x=input("Enter Key2: ")
             for i in x:
@@ -174,13 +174,13 @@ if __name__=='__main__':
                 else:
                     k2flag=0
                     break
-            if len(k2)!=8: # to check length of Key1
+            if len(k2)!=8: # to check length of Key2
                 k2flag=0
             
             if k2flag==1:
                 print("Key2: ",k2)
                 
-                #calling function to xor EP with K1
+                #calling function to xor EP with K2
                 xor1=funcXOR8(EP_1,k2)
                 print("XOR EP with Key2: ",xor1)
                 
