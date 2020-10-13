@@ -221,7 +221,7 @@ if __name__=='__main__':
                 
                 print()
                 
-                print("Encryption: ",end='')
+                print("Encryption => Cipher Key: ",end='')
                 for i in range(len(IP_1)):
                     print(IP_1[i],end='')
                 
