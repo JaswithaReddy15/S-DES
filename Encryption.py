@@ -6,45 +6,45 @@ Created on Mon Oct 12 15:46:15 2020
 @author: jaswithareddy
 
 Testcase 1:
-    PT: 01101101
+    PK: 01101101
     K2: 11000001
     K1: 10011100
-    CT: 10111111
+    CK: 10111111 => encryption
 Testcase 2:
-    PT: 10010111
+    PK: 10010111
     K2: 01000011
     K1: 10100100
-    CT: 00111000
+    CK: 00111000 => encryption
 """
 
-def funcIP(ip,key):
+def funcIP(ip,key): # permutates input key according to the given permutation (ip)
     IP=[]
     for i in ip:
         IP.append(key[i-1])
     return IP
 
 
-def leftdiv(IP):
+def leftdiv(IP): # divides IP into two parts (left)
     L=[]
     for i in range(0,4):
         L.append(IP[i])
     return L
 
-def rightdiv(IP):
+def rightdiv(IP): # divides IP into two parts (right)
     R=[]
     for i in range(4,8):
         R.append(IP[i])
     return R
 
 
-def funcEP(ep,R):
+def funcEP(ep,R): # permutates R according to the given permutation (ep)
     EP=[]
     for i in ep:
         EP.append(R[i-1])
     return EP
 
 
-def funcXOR8(EP,k1):
+def funcXOR8(EP,k1): # EP xor with k1
     xor=[]
     for i in range(8):
         if EP[i]==k1[i]:
@@ -74,14 +74,14 @@ def SBox(s0,s1,S0,S1):
     return S    
 
 
-def funcP4(p4,S):
+def funcP4(p4,S): # permutates S according to the given permutation (p4)
     P4=[]
     for i in p4:
         P4.append(S[i-1])
     return P4    
 
 
-def funcXOR4(P4,L):
+def funcXOR4(P4,L): # P4 xor with L
     xorL=[]
     for i in range(4):
         if P4[i]==L[i]:
