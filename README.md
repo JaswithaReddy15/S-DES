@@ -9,4 +9,4 @@ This respository consists of three programs that implement the S-DES algorithm.<
 2. Encryption <br>
 3. Decryption <br>
 <br>
-__Please let me know if there're any errors so I can learn too.__
+Please let me know if there're any errors so I can learn too.
